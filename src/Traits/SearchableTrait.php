@@ -1,6 +1,6 @@
 <?php
 
-namespace LuisLuciano\EloquentSearch;
+namespace LuisLuciano\EloquentSearch\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 
@@ -12,7 +12,7 @@ trait SearchableTrait
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeSearchFromRequest(Builder $query)
+    public function scopeSearchFromRequest(Builder $query): Builder
     {
         extract(request()->all());
 
