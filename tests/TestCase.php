@@ -9,7 +9,7 @@ use Orchestra\Testbench\TestCase as Orchestra;
  *
  * @author  Mahmoud Zalt  <mahmoud@zalt.me>
  */
-class TestCase extends Orchestra
+abstract class TestCase extends Orchestra
 {
     /**
      * Setup the test environment.
